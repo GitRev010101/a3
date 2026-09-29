@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap');
+:root{--blue:#668CB9;--blue2:#89A8CE;--ink:#5F6063;--dark:#505154;--pale:#F4F4F4;--line:#9BB5D5;--white:#fff;--max:1420px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:"Manrope",Arial,sans-serif}a{text-decoration:none;color:inherit}
+header{position:fixed;z-index:20;top:0;left:0;right:0;height:72px;padding:0 4vw;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #eee}.signature img{width:42px;height:42px;object-fit:contain}.signature{display:flex;align-items:center}nav{display:flex;gap:30px;font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}nav a:hover{color:var(--blue)}
+.hero{min-height:100vh;display:grid;grid-template-columns:34% 66%;max-width:var(--max);margin:auto;padding-top:72px}.hero-shape{position:relative;min-height:calc(100vh - 72px);background:var(--pale);overflow:hidden}.hero-triangle{position:absolute;inset:0 0 auto 0;height:53%;background:var(--blue);clip-path:polygon(0 0,100% 0,100% 100%,50% 52%,0 100%)}.hero-shape:after{content:"";position:absolute;right:0;top:0;width:42%;height:53%;background:var(--blue2);clip-path:polygon(100% 0,100% 100%,50% 52%);opacity:.85}.hero-image{position:absolute;z-index:1;left:8%;right:8%;top:8%;height:35%;overflow:hidden;opacity:.72;mix-blend-mode:multiply}.hero-image img{width:100%;height:100%;object-fit:cover}.hero-title{position:absolute;z-index:2;top:43%;width:100%;text-align:center;font-size:28px;line-height:1.15;color:var(--ink);font-weight:400}.hero-title span{font-weight:500}.hero-content{padding:15vh 8vw 10vh;display:flex;flex-direction:column;justify-content:center}.kicker,.section-head>span,.project-meta,.tags,.board-copy>span,.career>.section-head>span,.tools>span,.contact>div>span,footer{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}.kicker,.section-head>span,.project-meta,.board-copy>span,.tools>span,.contact>div>span{color:var(--blue)}h1{font-size:clamp(48px,6vw,88px);line-height:.98;font-weight:500;letter-spacing:-.055em;color:#54565a;margin:25px 0}.intro{font-size:19px;line-height:1.65;max-width:650px}.education{margin-top:28px;font-size:11px;color:#777;font-style:italic}
+.statement{max-width:var(--max);margin:auto;padding:120px 8vw 110px;display:grid;grid-template-columns:90px 1fr 170px;gap:35px;align-items:start}.statement .rule{width:70px;height:2px;background:var(--blue);margin-top:14px}.statement-copy{max-width:760px}.positioning-kicker{font-size:10px;font-weight:600;letter-spacing:.12em;color:var(--blue)}.statement p{font-size:clamp(32px,4vw,56px);line-height:1.03;margin:18px 0 0;color:#626467;letter-spacing:-.04em}.statement strong{color:var(--blue);font-weight:500}.statement-body{font-size:16px!important;line-height:1.7!important;max-width:650px;color:#666!important;letter-spacing:0!important;margin-top:28px!important}.statement>span:last-child{font-size:9px;letter-spacing:.12em;color:#888;padding-top:8px}
+.projects{background:#fafafa;padding:120px 6vw}.section-head{max-width:var(--max);margin:auto auto 65px}.section-head h2{font-size:clamp(40px,5vw,70px);font-weight:500;line-height:1;margin:18px 0 0;letter-spacing:-.045em;color:#55575a}.featured{max-width:var(--max);margin:0 auto 100px;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}.featured.reverse{grid-template-columns:.75fr 1.25fr}.featured.reverse .image-wrap{order:2}.image-wrap{position:relative;min-height:500px;overflow:hidden;background:#e9eef4}.image-wrap img{width:100%;height:100%;min-height:500px;display:block;object-fit:cover;filter:saturate(.86)}.overlay-label{position:absolute;left:22px;top:20px;background:rgba(255,255,255,.88);padding:8px 10px;font-size:9px;letter-spacing:.12em;color:#5b5d60}.credit{position:absolute;bottom:12px;right:14px;color:#fff;font-size:8px;text-shadow:0 1px 4px #333}.project-info{align-self:center}.project-info h3{font-size:clamp(38px,4.5vw,68px);line-height:.96;font-weight:500;letter-spacing:-.055em;color:#57595c;margin:15px 0 20px}.project-info p{font-size:15px;line-height:1.75;max-width:510px}.project-info p strong{color:#555}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:25px}.tags span{border:1px solid #c5d2e2;padding:8px 10px;background:#fff;color:#6d7a8a;font-size:8px}
+.schwarz-images{background:#edf2f5}.schwarz-pair{position:absolute;inset:12% 8% 18%;display:grid;grid-template-columns:1.18fr .82fr;gap:12px;align-items:center}.schwarz-pair img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)}.schwarz-pair img:first-child{height:82%;object-position:center}.schwarz-pair img:last-child{height:62%;object-position:center}.model-count{position:absolute;left:7%;bottom:45px;font-size:115px;line-height:.8;color:var(--blue);font-weight:500;letter-spacing:-.08em;z-index:3}.image-note{position:absolute;left:8%;bottom:23px;font-size:8px;letter-spacing:.13em;color:#67788c;z-index:3}.data-feature .image-wrap img{object-fit:cover}.technocentre-feature .image-wrap img{object-fit:cover;object-position:center 32%}
+.secondary-grid{max-width:var(--max);margin:20px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.small-image{height:250px;position:relative;overflow:hidden;background:#eef3f6;margin-bottom:20px}.small-image img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.86)}.small-project h3{font-size:30px;line-height:1;margin:12px 0;color:#57595c;font-weight:500;letter-spacing:-.04em}.small-project p{font-size:13px;line-height:1.65;margin:0}
+.board-section{max-width:var(--max);margin:auto;padding:140px 6vw;display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}.board-copy h2{font-size:clamp(48px,6vw,86px);line-height:.88;letter-spacing:-.055em;font-weight:500;color:#56585b;margin:18px 0 25px}.automation-lead{font-size:17px;line-height:1.6;max-width:500px;margin:0 0 28px}.automation-flow{display:flex;align-items:stretch;gap:10px;flex-wrap:wrap;margin:0 0 25px}.automation-flow div{border-top:2px solid var(--blue);background:#f7f9fb;padding:12px 13px;min-width:95px;flex:1}.automation-flow b{display:block;font-size:9px;letter-spacing:.1em;color:#596a7e}.automation-flow small{display:block;font-size:10px;line-height:1.45;margin-top:6px;color:#777}.automation-flow i{align-self:center;color:var(--blue);font-style:normal;font-size:18px}.code-sample{margin:0 0 24px;padding:16px;background:#f3f5f7;border-left:2px solid var(--blue);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;line-height:1.55;color:#59616b;overflow:auto}.board-section figure{margin:0;padding:10px;background:#fff;box-shadow:0 15px 45px rgba(80,100,120,.12)}.board-section figure img{width:100%;display:block}.board-section figcaption{font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#718196;padding:12px 4px 3px}
+.career{padding:120px 8vw;max-width:var(--max);margin:auto}.timeline{border-top:1px solid #d7d7d7}.timeline div{display:grid;grid-template-columns:180px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid #ddd}.timeline b{font-size:9px;letter-spacing:.1em;color:var(--blue)}.timeline span{font-size:17px;line-height:1.55}.timeline strong{font-weight:600;color:#55575a}.tools{padding:100px 6vw;background:var(--pale)}.tool-grid{max-width:var(--max);margin:35px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.tool-grid div{background:#fff;border-top:2px solid var(--blue);padding:22px;min-height:125px}.tool-grid b{display:block;color:#5b5d60;font-size:13px;margin-bottom:10px}.tool-grid small{line-height:1.6;color:#777}.contact{background:var(--blue);color:white;padding:110px 6vw;display:flex;justify-content:space-between;gap:50px}.contact>div>span{color:#dce8f7}.contact h2{font-size:clamp(55px,8vw,110px);line-height:.88;font-weight:500;letter-spacing:-.06em;margin:22px 0 0}.contact-side{align-self:end;text-align:right;font-size:12px;line-height:1.8}.contact-side img{width:95px;filter:brightness(0) invert(1);margin-bottom:8px}.contact>div:last-child{color:#eef5ff}footer{display:flex;justify-content:space-between;padding:20px 6vw;color:#777;background:#fff}
+@media(max-width:900px){header{padding:0 20px}nav{gap:15px}.hero{grid-template-columns:1fr}.hero-shape{min-height:72vh}.hero-content{padding:80px 25px}.statement{grid-template-columns:1fr;padding:90px 25px}.statement .rule{display:none}.statement>span:last-child{margin-top:20px}.projects{padding:90px 20px}.featured,.featured.reverse{grid-template-columns:1fr;gap:28px}.featured.reverse .image-wrap{order:0}.image-wrap,.image-wrap img{min-height:360px}.secondary-grid{grid-template-columns:1fr}.board-section{grid-template-columns:1fr;padding:90px 20px}.automation-flow{display:grid;grid-template-columns:1fr 1fr}.automation-flow i{display:none}.career{padding:90px 25px}.timeline div{grid-template-columns:1fr;gap:8px}.tool-grid{grid-template-columns:1fr 1fr}.contact{padding:90px 25px;display:block}.contact-side{text-align:left;margin-top:40px}.schwarz-pair{inset:8% 5% 15%}}
+@media(max-width:540px){.tool-grid{grid-template-columns:1fr}h1{font-size:48px}.automation-flow{grid-template-columns:1fr}.schwarz-pair{position:absolute;inset:10% 6% 18%;grid-template-columns:1fr 1fr}.model-count{font-size:85px}}
+
+
+/* =========================================================
+   AD3 TARGETED OVERRIDES — single source of truth
+   AD3 remains the visual base. Only hero composition changes.
+   ========================================================= */
+
+/* Shared horizontal alignment: 6vw gutters, max 1420px. */
+.projects .section-head,
+.projects > .featured,
+.projects > .secondary-grid,
+.bim-code-grid,
+.career .section-head,
+.career .timeline,
+.tool-grid{
+  width:100%;
+  max-width:var(--max);
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* HERO — AD3 identity, reduced to a thin horizontal opening. */
+.hero-ad4-composition{
+  width:100%;
+  max-width:none;
+  height:360px;
+  min-height:360px;
+  margin:0;
+  padding:72px 0 0;
+  box-sizing:border-box;
+  display:grid;
+  grid-template-columns:42% 58%;
+  background:#fff;
+}
+.hero-ad4-composition .hero-copy{
+  min-width:0;
+  padding:42px 5vw 42px 6vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  background:#fff;
+}
+.hero-kicker{
+  margin:24px 0 0;
+  font-size:10px;
+  line-height:1.4;
+  font-weight:600;
+  letter-spacing:.12em;
+  color:#6f8193;
+  text-transform:none;
+}
+.hero-ad4-composition h1 span{color:var(--blue)}
+.hero-ad4-composition h1 span em{font-style:normal;color:#54565a}
+
+.hero-section-no{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:18px;
+}
+.hero-ad4-composition h1{
+  font-family:"Manrope",Arial,sans-serif;
+  font-size:clamp(54px,6vw,82px);
+  line-height:.94;
+  font-weight:500;
+  letter-spacing:-.055em;
+  color:#54565a;
+  margin:0;
+}
+.hero-ad4-composition .hero-visual{
+  position:relative;
+  min-width:0;
+  height:288px;
+  overflow:hidden;
+  background:#eef3f7;
+  align-self:end;
+}
+.hero-ad4-composition .hero-visual img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  image-rendering:auto;
+}
+@media(max-width:900px){
+  .hero-ad4-composition{
+    height:auto;
+    min-height:0;
+    grid-template-columns:1fr;
+    padding-top:72px;
+  }
+  .hero-ad4-composition .hero-copy{padding:55px 25px 45px}
+  .hero-ad4-composition h1{font-size:54px}
+  .hero-ad4-composition .hero-visual{height:300px}
+}
+
+
+/* SCHWARZ DIGITS CAMPUS — preserve the approved image organization */
+.schwarz-images{position:relative;min-height:560px;display:grid;grid-template-columns:1.35fr .65fr;gap:12px;align-items:stretch;background:#e7edf2;overflow:visible}
+.schwarz-main,.schwarz-secondary{position:relative;overflow:hidden;background:#e7edf2}
+.schwarz-main img,.schwarz-secondary img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9)}
+.schwarz-main img,.schwarz-secondary img{object-position:center}
+.image-credit{position:absolute;bottom:9px;left:10px;right:10px;font-size:8px;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.project-number{position:absolute;left:-12px;top:-22px;font-size:100px;color:var(--blue);font-weight:500;line-height:.8;z-index:2;mix-blend-mode:multiply}
+.schwarz-feature .project-info h3{line-height:.94}
+@media(max-width:1000px){.schwarz-images{min-height:520px}}
+@media(max-width:700px){.schwarz-images{min-height:420px;grid-template-columns:1fr .48fr}.schwarz-main img,.schwarz-secondary img{height:420px}.project-number{font-size:76px}}
+
+/* BIM × CODE — same AD3 horizontal content width as Projects / Parcours. */
+.bim-code{
+  background:#fff;
+  color:#5f6f7e;
+  padding:120px 6vw 115px;
+  position:relative;
+  overflow:hidden;
+}
+.bim-code-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.30fr) minmax(210px,.58fr) minmax(420px,1fr);
+  gap:24px;
+  align-items:start;
+}
+.bim-code-intro{min-width:0;max-width:none}
+.bim-code-label{
+  display:block;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  color:var(--blue);
+  margin:0 0 30px;
+}
+.bim-code-intro h2{
+  max-width:100%;
+  font-size:clamp(50px,4.6vw,70px);
+  line-height:.94;
+  font-weight:500;
+  letter-spacing:-.055em;
+  color:#54565a;
+  margin:0 0 36px;
+}
+.bim-code-intro p{
+  max-width:430px;
+  font-size:16px;
+  line-height:1.65;
+  margin:0;
+  color:#718394;
+}
+.bim-tags{display:flex;gap:7px;margin-top:28px;flex-wrap:wrap}
+.bim-tags span{
+  border:1px solid #c5d2e2;
+  padding:8px 10px;
+  font-size:8px;
+  letter-spacing:.12em;
+  color:#6d7a8a;
+  background:#fff;
+}
+.bim-tools-card,
+.bim-code-card{
+  min-width:0;
+  height:330px;
+  margin-top:61px;
+  border:1px solid #b9d0e4;
+  background:#fff;
+}
+.bim-tools-card{
+  padding:24px 28px;
+  display:flex;
+  flex-direction:column;
+}
+.tool-logo-row{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  color:#454b53;
+  font-size:20px;
+  white-space:nowrap;
+}
+.tool-logo-row img{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  display:block;
+  flex:0 0 42px;
+}
+.tool-divider{height:1px;background:#b9d0e4;margin:22px 8px}
+.bim-code-card{padding:15px 20px;overflow:hidden}
+.bim-code-card pre{
+  margin:0;
+  font:12px/1.75 'Courier New',monospace;
+  color:#82a8ca;
+  white-space:pre;
+  overflow:hidden;
+}
+.bim-code-card pre span{display:inline-block;width:27px;color:#82a8ca}
+
+/* Clean vector-style monochrome logos: no cropped raster assets, no pixelation. */
+.tool-logo-row img{background:transparent}
+
+/* Project imagery: identical secondary frames, preserving the supplied photos. */
+.secondary-grid{gap:24px}
+.small-image{height:250px;aspect-ratio:16/9}
+.small-image img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+
+/* Keep career on the same 6vw / 1420px alignment. */
+.career{padding:120px 6vw}
+
+@media(max-width:1200px){
+  .bim-code-grid{grid-template-columns:minmax(0,1.15fr) minmax(190px,.55fr) minmax(320px,.9fr);gap:18px}
+  .bim-code-intro h2{font-size:50px;line-height:.94}
+  .bim-tools-card{padding:18px 14px}
+  .tool-logo-row{gap:8px;font-size:16px}
+  .tool-logo-row img{width:34px;height:34px;flex-basis:34px}
+  .tool-divider{margin:18px 4px}
+}
+@media(max-width:900px){
+  .hero-ad4-composition{grid-template-columns:1fr;padding-top:72px}
+  .hero-ad4-composition .hero-copy{padding:80px 25px 55px}
+  .hero-ad4-composition .hero-visual{min-height:360px;height:360px}
+  .hero-ad4-composition h1{font-size:54px}
+  .bim-code{padding:90px 25px}
+  .bim-code-grid{grid-template-columns:1fr 1fr;gap:18px}
+  .bim-code-intro{grid-column:1 / -1}
+  .bim-tools-card,.bim-code-card{margin-top:20px}
+  .bim-code-card{grid-column:1 / -1}
+}
+@media(max-width:600px){
+  .bim-code-grid{grid-template-columns:1fr}
+  .bim-code-intro{grid-column:auto}
+  .bim-tools-card,.bim-code-card{height:auto;min-height:260px}
+  .bim-code-card{grid-column:auto}
+}
+
+/* Keep the four main content columns on one common AD3 baseline. */
+.projects .section-head,
+.projects > .featured,
+.projects > .secondary-grid,
+.bim-code-grid,
+.career .section-head,
+.career .timeline,
+.tool-grid{width:min(100%,var(--max))}
+
+
+/* REVISION 17 — restore common 04 / 05 / 06 gutter and simplify BIM × CODE. */
+.career,.tools,.contact{padding-left:6vw;padding-right:6vw}
+.career .section-head,.career .timeline,.tools > span,.tools .tool-grid{max-width:var(--max)}
+@media(max-width:900px){
+  .tools,.contact{padding-left:25px;padding-right:25px}
+}
+
+/* REVISION 19 — SERVICES section */
+.services{background:#fff;padding:120px 6vw 110px;}
+.services-inner{width:min(100%,var(--max));margin:0 auto;}
+.services .section-head{margin:0 0 42px;}
+.services-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #c7d7e7;border-bottom:1px solid #c7d7e7;}
+.services-grid article{min-height:235px;padding:28px 28px 30px;border-right:1px solid #c7d7e7;}
+.services-grid article:first-child{border-left:1px solid #c7d7e7;}
+.service-no{display:block;font-size:10px;font-weight:600;letter-spacing:.12em;color:var(--blue);margin-bottom:48px;}
+.services-grid h3{margin:0 0 18px;color:#55575a;font-size:22px;line-height:1.08;font-weight:500;letter-spacing:-.025em;}
+.services-grid p{margin:0;color:#718394;font-size:14px;line-height:1.6;max-width:250px;}
+.services-quote{margin-top:30px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);font-weight:600;}
+@media(max-width:1100px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.services-grid article:nth-child(2){border-right:0}.services-grid article:nth-child(3){border-left:1px solid #c7d7e7;border-top:1px solid #c7d7e7}.services-grid article:nth-child(4){border-top:1px solid #c7d7e7}}
+@media(max-width:900px){.services{padding:90px 25px}.services-grid{grid-template-columns:1fr}.services-grid article,.services-grid article:nth-child(3),.services-grid article:nth-child(4){border-left:1px solid #c7d7e7;border-right:1px solid #c7d7e7;border-top:0}.services-grid article+article{border-top:1px solid #c7d7e7}.service-no{margin-bottom:28px}}
+
+/* REVISION 20 — reorder sections + shared light-gray contrast + full-width hard skills */
+.tools{
+  background:#F4F4F4;
+  padding:120px 6vw 110px;
+}
+.tools > span{
+  display:block;
+  width:100%;
+  margin:0 auto;
+  color:var(--blue);
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+}
+.tools .tool-grid{
+  width:min(100%,var(--max));
+  max-width:var(--max);
+  margin:32px auto 0;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+}
+.tools .tool-grid div{
+  min-width:0;
+  min-height:145px;
+  padding:24px 20px;
+  background:#fff;
+  border-top:2px solid var(--blue);
+}
+
+.services{
+  background:#F4F4F4;
+}
+
+@media(max-width:900px){
+  .tools .tool-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:540px){
+  .tools .tool-grid{grid-template-columns:1fr;}
+}
+
+/* REVISION 22 — Parcours aligned to the common page grid. */
+.career{
+  max-width:none;
+  width:100%;
+  margin:0;
+  padding:120px 6vw 110px;
+  box-sizing:border-box;
+}
+.career .section-head,
+.career .timeline{
+  width:min(100%,var(--max));
+  max-width:var(--max);
+  margin-left:auto;
+  margin-right:auto;
+}
+.career .section-head{margin-bottom:65px}
+@media(max-width:900px){
+  .career{padding:90px 25px}
+}
+
+/* REVISION 23 — project image crop, project labels, service order + contact quote link */
+.small-image img{object-position:center}
+.services-quote{font-size:14px;letter-spacing:.08em}
+.services-quote a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.services-quote a:hover{opacity:.7}
+
+
+/* REVISION 26 — header signature + A³D */
+.brand-mark{display:flex;align-items:center;gap:12px;color:#54565a}
+.brand-mark img{width:42px;height:42px;object-fit:contain;display:block}
+.brand-mark span{font-family:"Manrope",Arial,sans-serif;font-size:22px;font-weight:600;letter-spacing:-.04em;line-height:1}
+@media(max-width:540px){.brand-mark{gap:8px}.brand-mark img{width:38px;height:38px}.brand-mark span{font-size:19px}}

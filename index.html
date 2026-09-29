@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AD³Cube — BIM Manager · Data Engineer · Architecte</title>
+<meta name="description" content="Portfolio de BIM Manager, architecte et Data Engineer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand-mark" href="#top"><img src="assets/logo-signature.png" alt="A³Cube"><span>A³D</span></a>
+  <nav><a href="#projets">Projets</a><a href="#services">Services</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="top">
+<section class="hero hero-ad4-composition">
+  <div class="hero-copy">
+    <span class="hero-section-no">01 / POSITIONNEMENT</span>
+    <h1>Du projet<br><span><em>à</em> la donnée</span></h1>
+    <span class="hero-kicker">BIM Manager - Data Engineer</span>
+  </div>
+  <div class="hero-visual">
+    <img src="assets/hero-building-hd.jpg" alt="Architecture contemporaine">
+  </div>
+</section>
+
+<section id="projets" class="projects">
+  <div class="section-head"><span>02 / PROJETS</span><h2>Projets sélectionnés</h2></div>
+
+  <article id="schwarz" class="featured featured-schwarz schwarz-feature">
+    <div class="schwarz-images">
+      <div class="schwarz-main"><img src="assets/schwarz-real.jpg" alt="Schwarz Digits Campus — vue aérienne"><span class="image-credit">Photo © Franco Casaccia / JSWD</span></div>
+      <div class="schwarz-secondary"><img src="assets/schwarz-visual.jpg" alt="Schwarz Digits Campus — visualisation"><span class="image-credit">Visualisation © Bloomimages / JSWD</span></div>
+      <div class="project-number">01</div>
+    </div>
+    <div class="project-info"><div class="project-meta">CAMPUS · BIM MANAGEMENT · JSWD ARCHITEKTEN</div><h3>Schwarz<br>Digits Campus</h3><p>Un projet d’importance à l’échelle d’un campus : gestion des maquettes architecturales avec une division en <strong>16 modèles distincts</strong>, coordination avec les bureaux d’études, correction des livrables et gestion des exports et dépôts sur ThinkProjekt.</p><div class="tags"><span>16 MODÈLES</span><span>COORDINATION</span><span>THINKPROJEKT</span></div></div>
+  </article>
+
+  <article class="featured reverse data-feature">
+    <div class="image-wrap"><img src="assets/data-center.jpg" alt="Data center — illustration architecturale"><div class="overlay-label">02 / 3 DATA CENTERS</div></div>
+    <div class="project-info"><div class="project-meta">DATA · EXPERTISE · CONFIDENTIEL</div><h3>3 Data Centers</h3><p>Trois missions de grande échelle autour de la qualité de l’information : COBie, exports et dépôts sur Autodesk Construction Cloud avec Design Collaboration, et mise en conformité des maquettes.</p><div class="tags"><span>COBIE</span><span>ACC</span><span>DESIGN COLLABORATION</span><span>MODEL CHECK</span></div></div>
+  </article>
+
+  <article class="featured technocentre-feature">
+    <div class="image-wrap"><img src="assets/technocentre-final.png" alt="Technocentre Toulouse Atlanta"><div class="overlay-label">03 / TECHNOCENTRE TOULOUSE ATLANTA</div><div class="credit">Perspective : L’Atelier des Chimères</div></div>
+    <div class="project-info"><div class="project-meta">BUILDING · BIM · CONCEPTION & EXE</div><h3>Technocentre Toulouse Atlanta</h3><p>Gestion des exports, paramétrisation des modèles, coordination TCE et gestion de la GED sur Kroqi.</p><div class="tags"><span>BIM</span><span>PARAMÉTRISATION</span><span>TCE</span><span>KROQI</span></div></div>
+  </article>
+
+  <div class="secondary-grid">
+    <article class="small-project"><div class="small-image"><img src="assets/metro-francois-verdier.png" alt="Station François Verdier — métro Toulouse"><span class="image-credit">Thierry Schneider / TAA</span></div><div class="project-meta">INFRASTRUCTURE</div><h3>Métro de Toulouse / François Verdier</h3><p>Gestion des modèles de la station François Verdier et coordination avec les modèles des autres agences et l’infrastructure du métro.</p></article>
+    <article class="small-project"><div class="small-image"><img src="assets/meet-cim-territory-crop.png" alt="Visuel personnel CIM et projets urbains"><span class="image-credit">TAA</span></div><div class="project-meta">CIM · TERRITORY</div><h3>MEET Toulouse / CIM</h3><p>Une mission similaire au Technocentre mais à l’échelle urbaine : modèles CIM, exports, paramétrisation et coordination.</p></article>
+    <article class="small-project"><div class="small-image"><img src="assets/residence-loudenvielle.png" alt="Résidence Bouygues à Loudenvielle"><span class="image-credit">TAA</span></div><div class="project-meta">RESIDENTIAL</div><h3>Résidences Bouygues / Loudenvielle</h3><p>Mission BIM sur un projet résidentiel à Loudenvielle, inscrite dans une pratique de coordination et de production des données du projet.</p></article>
+  </div>
+</section>
+
+<section id="bim-code" class="bim-code">
+  <div class="bim-code-grid">
+    <div class="bim-code-intro">
+      <span class="bim-code-label">03 / BIM × CODE</span>
+      <h2>Vers<br>l’automatisation.</h2>
+      <p>Python, Dynamo, paramétrique et structuration des workflows : une pratique qui prolonge le BIM par l’automatisation des tâches et la manipulation de la donnée.</p>
+      <div class="bim-tags"><span>PYTHON</span><span>DYNAMO</span><span>REVIT</span><span>DATA</span></div>
+    </div>
+
+    <div class="bim-tools-card">
+      <div class="tool-logo-row"><img src="assets/dynamo-logo-orange.svg" alt="Dynamo"><span>Dynamo</span></div>
+      <div class="tool-divider"></div>
+      <div class="tool-logo-row"><img src="assets/python-logo-orange.svg" alt="Python"><span>Python</span></div>
+    </div>
+
+
+    <div class="bim-code-card">
+      <pre><code><span>01</span>  # Exemple : export vues
+<span>02</span>  import clr
+<span>03</span>  from Autodesk.Revit.DB import *
+<span>04</span>
+<span>05</span>  # Filtrer et exporter les vues
+<span>06</span>  for v in viewsTemplesId in ElementId.InvalidElementId:
+<span>07</span>      ExportView(v2)
+<span>08</span>
+<span>09</span>  # Log résultats
+<span>10</span>  with open("export_log.txt", "w") as f:
+<span>11</span>      f.write("Export completed\n")</code></pre>
+    </div>
+  </div>
+</section>
+<section class="tools"><span>04 / HARD SKILLS</span><div class="tool-grid"><div><b>01 — SUITE AUTODESK</b><small>Revit · Navisworks · Autodesk · Twinmotion<br>+ Interoperability Archicad</small></div><div><b>02 — PLATEFORMES GED</b><small>Plateformes de Gestion Électronique de Données<br>ACC Design Collaboration · ThinkProjekt · Catenda · Kroqi</small></div><div><b>03 — STANDARDS BIM</b><small>ISO 19650 · Convention LOD / LOIN<br>Exports COBie</small></div><div><b>04 — LANGUES</b><small>Français · Anglais · Allemand<br>Trilingue</small></div></div></section>
+
+
+<section id="parcours" class="career"><div class="section-head"><span>05 / PARCOURS</span><h2>Une triple qualification</h2></div><div class="timeline"><div><b>FORMATION</b><span><strong>Data Engineer</strong> — Liora × École des Mines Paris<br><strong>Master’s degree in Architecture</strong> — ENSAP Bordeaux · TUM München</span></div><div><b>2021 — 2025</b><span><strong>Head of the BIM Department</strong><br>Taillandier Architectes</span></div><div><b>2018 — 2021</b><span><strong>BIM Manager</strong><br>JSWD Architekten</span></div><div><b>2018</b><span><strong>Architect</strong><br>JSWD Architekten</span></div><div><b>2017</b><span><strong>Architect junior</strong><br>Santangelo & Renard</span></div></div></section>
+
+
+<section id="services" class="services">
+  <div class="services-inner">
+    <div class="section-head"><span>06 / SERVICES</span><h2>Une expertise au service du projet.</h2></div>
+    <div class="services-grid">
+      <article><span class="service-no">01</span><h3>Contrôle qualité<br>et audit de maquettes</h3><p>Vérification de la qualité, de la conformité et de la cohérence des maquettes BIM.</p></article>
+      <article><span class="service-no">02</span><h3>Coordination<br>interdisciplinaire</h3><p>Coordination des modèles via Navisworks et ACC Model Coordination.</p></article>
+      <article><span class="service-no">03</span><h3>Accompagnement<br>des équipes</h3><p>Accompagnement et montée en compétence des équipes sur les méthodes et outils BIM.</p></article>
+      <article><span class="service-no">04</span><h3>Automatisation<br>des tâches</h3><p>Écriture de scripts Dynamo et Python personnalisés pour automatiser les tâches répétitives.</p></article>
+    </div>
+    <div class="services-quote"><a href="#contact">Devis sur demande</a></div>
+  </div>
+</section>
+
+
+<section id="contact" class="contact"><div><span>07 / CONTACT</span><h2>Disponible pour<br>parler projet.</h2></div><div class="contact-side"><img src="assets/logo-white.svg" alt="A³Cube"><br>BIM Manager · Data Engineer · Architecte</div></section>
+</main><footer><span>A³CUBE</span><span>FR · DE · EN · ES</span></footer>
+</body></html>
